@@ -55,7 +55,7 @@ h1 {
 hr {
   box-sizing: content-box; /* 1 */
   height: 0; /* 1 */
-  overflow: visible; /* 2 */
+  // overflow: visible; /* 2 */
 }
 
 /**
@@ -177,7 +177,7 @@ textarea {
 
 button,
 input { /* 1 */
-  overflow: visible;
+  // overflow: visible;
 }
 
 /**

@@ -51,7 +51,7 @@ class Detail extends React.Component{
 		return (
 			<React.Fragment>
 				{(_data?.id)&&<>
-				<div id="nl-main">
+				{/* <div id="nl-main">
 					<section className="sl-section">
 						<div className="container">
 							<div className="sl-section__content swpBtn-center">
@@ -67,7 +67,7 @@ class Detail extends React.Component{
 							</div>
 						</div>
 					</section>
-				</div>
+				</div> */}
 				</>}
 			</React.Fragment>
 		)
