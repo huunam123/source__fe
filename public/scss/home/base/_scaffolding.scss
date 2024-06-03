@@ -50,7 +50,7 @@ i[class^="fa"], svg g [fill], svg, a{
 }
 
 input[type="number"]{
-	-moz-appearance: textfield;
+	// -moz-appearance: textfield;
 
 	&::-webkit-outer-spin-button,&::-webkit-inner-spin-button{
 		-webkit-appearance: none;
@@ -136,10 +136,10 @@ body[style^="padding-right"]{
 		max-width: $container-max-width;
 	}
 
-	@media (min-width: 1200px){
-		max-width: 100%;
-		padding: 0 96px;
-	}
+	// @media (min-width: 1200px){
+	// 	max-width: 100%;
+	// 	padding: 0 96px;
+	// }
 
 	// @media (min-width: 1200px) and (max-width: 1919px){
 	// 	max-width: 100%;
@@ -168,12 +168,14 @@ body[style^="padding-right"]{
 	background-color: #ffffff;
 	font-size: $font-size-body;
 	font-family: $font-family-base;
-	padding-top: $header-height-pc;
+	overflow-x: hidden;
+	// padding-top: $header-height-pc;
+
 	@include transition(all .2s linear);
 
 	@include media-breakpoint-down(lg){
-		padding-top: $header-height-mb;
-		padding-bottom: $navMobile-height;
+		// padding-top:50;
+		// padding-bottom: 50px;
 
 		&.ovh{
 			overflow: hidden;
@@ -182,15 +184,15 @@ body[style^="padding-right"]{
 	}
 }
 
-#nl-main{
-	max-width: 100%;
-	margin: auto;
+// #nl-main{
+// 	max-width: 100%;
+// 	margin: 0 auto;
 
-	@media (min-width: 1440px){
-		max-width: 1440px;
-	}
+// 	@media (min-width: 1440px){
+// 		max-width: 1440px;
+// 	}
 
-}
+// }
 
 @include media-breakpoint-down(lg){
 	

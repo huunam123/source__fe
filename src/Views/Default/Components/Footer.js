@@ -2,119 +2,149 @@
 
 /* Package System */
 import React from "react";
-import Link from 'next/link';
-import BackToTop from '@views/Default/Components/BackToTop';
-import Fab from '@mui/material/Fab';
+import Link from "next/link";
+import BackToTop from "@views/Default/Components/BackToTop";
+import Fab from "@mui/material/Fab";
 
-class Footer extends React.Component{
+class Footer extends React.Component {
+  constructor(props) {
+    super(props);
+  }
 
-	constructor(props){
-		super(props);
-	}
+  handleScrollTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
-	handleScrollTop=()=>{
-		window.scrollTo({top:0,behavior:'smooth'})
-	}
+  render() {
+    return (
+      <>
+        <footer id="nl-footer">
+          {/* <div className="nl-footer__top">
+            <div className="container-">
+              <div className="inner">
+                <div className="group">
+                  <div className="group-mail">
+                    <svg
+                      width="100"
+                      height="101"
+                      viewBox="0 0 100 101"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="50" cy="50.5" r="50" fill="white" />
+                      <path
+                        d="M47.3973 26.7364C47.1453 26.5985 46.8626 26.5262 46.5753 26.5262C46.2881 26.5262 46.0054 26.5985 45.7534 26.7364L28.4247 36.1885C27.7329 36.5652 27.1678 37.1028 26.7569 37.7398L46.5753 48.548L66.3938 37.7398C65.9767 37.092 65.4031 36.5597 64.726 36.1919L47.3973 26.733V26.7364ZM26.0274 57.3494V41.2432L45.7534 52.0035C46.0054 52.1414 46.2881 52.2137 46.5753 52.2137C46.8626 52.2137 47.1453 52.1414 47.3973 52.0035L67.1233 41.2432V57.3494C67.1233 59.166 66.4017 60.9081 65.1172 62.1926C63.8327 63.4771 62.0905 64.1987 60.274 64.1987H32.8767C31.0602 64.1987 29.318 63.4771 28.0335 62.1926C26.749 60.9081 26.0274 59.166 26.0274 57.3494ZM33.7945 67.6234C34.3957 68.6646 35.2603 69.5292 36.3015 70.1304C37.3427 70.7315 38.5238 71.048 39.726 71.048H60.274C63.9071 71.048 67.3914 69.6048 69.9604 67.0358C72.5294 64.4668 73.9726 60.9825 73.9726 57.3494V43.6508C73.9726 42.4485 73.6561 41.2674 73.0549 40.2262C72.4538 39.185 71.5891 38.3204 70.5479 37.7193V57.3494C70.5479 60.0742 69.4655 62.6875 67.5388 64.6142C65.612 66.541 62.9988 67.6234 60.274 67.6234H33.7945Z"
+                        fill="#0A377F"
+                      />
+                    </svg>
+                  </div>
+                  <div className="group-text">
+                    Đăng ký để nhận thông báo mới nhất từ chúng tôi!
+                  </div>
+                </div>
 
-	render(){
-		return(
-			<>
-				{/* <footer id="nl-footer">
-					<div className="nl-footer__top">
-						<div className="container">
-							<div className="inner">
-								<div className="logo">
-									<a title="MCV"><img alt="Logo" src="/images/logomcv.png" width="120"/></a>
-								</div> */}
+                <div className="group-import">
+                  <div className="email-">
+                    <div className="email-text">
+                      Nhập địa chỉ E-mail của bạn
+                    </div>
+                  </div>
+                  <div className="group-re">
+                    <div className="re">Đăng ký</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> */}
 
-								{/* <div className="dowwn-app">
-									<div className="img">
-										<a href="https://apps.apple.com/VN/app/id1545324313?mt=8" target="_blank" title="Tải app"><img className="img-fluid" alt="App Store" src="/images/img-app__ios.png" /></a>
-									</div>
-									<div className="img">
-										<a href="https://play.google.com/store/apps/details?id=vn.com.net_love.app" target="_blank" title="Tải app"><img className="img-fluid" alt="Google Play" src="/images/img-app__adr.png" /></a>
-									</div>
-								</div> */}
+          <div className="nl-footer__middle">
+            <div className="container">
+              <div className="row">
+                <div className="col-lg-9">
+                  <div className="ctn">
+                    <div className="ctn-content">
+                      <h3>TIÊN LƯỢNG</h3>
+                      <h4>Đái tháo đường</h4>
+                    </div>
 
-								{/* <div className="social">
-									<p>Kết nối với chúng tôi:</p>
-									{/* <a href="https://www.facebook.com/" title="Facebook" target="_blank"><i className="fab fa-facebook-square"></i></a> */}
-									{/* <a href="https://twitter.com/" title="Twitter" target="_blank"><i className="fab fa-twitter-square"></i></a> */}
-									{/* <a href="https://www.youtube.com/c/MCVMedia" title="Youtube" target="_blank"><i className="fab fa-youtube"></i></a> */}
-									{/* <a href="https://www.instagram.com/" title="Instagram" target="_blank"><i className="fab fa-instagram"></i></a> */}
-									{/* <a href="https://www.tiktok.com/" title="Tiktok" target="_blank"><i className="fab fa-tiktok"></i></a> */}
-									{/* <a href="https://www.linkedin.com/company/mcv-group/" title="Linkedin" target="_blank"><i className="fab fa-linkedin"></i></a> */}
-								{/* </div>
-							</div>
-						</div>
-					</div>
+                    <div className="ctn-text">
+                      Ứng dụng Tiên Đoán Tiểu Đường giúp phát hiện nguy cơ mắc
+                      bệnh sớm, cung cấp lời khuyên phòng ngừa và cải thiện lối
+                      sống cho cộng đồng.
+                    </div>
+                  </div>
+                </div>
 
-					<div className="nl-footer__middle">
-						<div className="container">
-							<div className="line"></div>
-							<div className="row">
-								<div className="col-lg-6">
-									<div className="ctn">
-										<h3>CÔNG TY CỔ PHẦN TẬP ĐOÀN MCV</h3> */} 
-										{/* <p>Trụ sở: 18Bis/22/1I Nguyễn Thị Minh Khai, P. Đa Kao, Q. 1, TP HCM</p> */}
-										{/* <p>MST: 0102 154 249</p>
-										<p>Văn phòng: 19A, E Office Park, KCX Tân Thuận, P. Tân Thuận Đông, Q. 7, TP HCM</p>
-										<p>ĐT: <a href="tel:02462752435" title="024 6275 2435">024 6275 2435</a> | Email: <a href="mailto:info@mcv.com.vn" title="info@mcv.com.vn">info@mcv.com.vn</a></p>
-										<p>0102154249 do Sở KHDT Hà Nội cấp ngày 30/01/2007, thay đổi lần thứ 04 ngày 30/11/2016</p>
-									</div>
-								</div>
+                <div className="col-lg-3">
+                  <div className="row">
+                    <div className="col-md-12">
+                      <dt>BỆNH VIỆN ĐA KHOA XANH PÔN</dt>
+                      <dd>12 Chu Văn An, Ba Đình, Hà Nội</dd>
+                      <div className="text-tel">
+                        Tel: 02438233075 - 02438233073
+                      </div>
 
-								<div className="col-lg-6">
-									<div className="row"> */}
-										{/* <div className="col-md-4">
-											<dl>
-												<dt>Hỗ trợ</dt>
-												<dd>
-													<Link href='https://mcv.com.vn/lien-he'><a title="Liên hệ hỗ trợ">Liên hệ hỗ trợ</a></Link>
-													<a title="Trung tâm trợ giúp">Trung tâm trợ giúp</a>
-												</dd>
-											</dl>
-										</div>
-										<div className="col-md-4">
-											<dl>
-												<dt>Hợp tác</dt>
-												<dd>
-													<a title="Liên hệ quảng cáo">Liên hệ quảng cáo</a>
-													<a title="Liên hệ hợp tác">Liên hệ hợp tác</a>
-												</dd>
-											</dl>
-										</div> */}
-										{/* <div className="col-md-4">
-											<dl>
-												<dt>Pháp lý</dt>
-												<dd>
-													<Link href="/privacy"><a title="Chính sách quyền riêng tư">Chính sách quyền riêng tư</a></Link>
-													<Link href="/terms"><a title="Điều khoản sử dụng">Điều khoản sử dụng</a></Link>
-												</dd>
-											</dl>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div className="line"></div>
-						</div>
-					</div>
+                      <div className="text-lh">Liên hệ chúng tôi qua:</div>
+                    </div>
 
-					<div className="nl-footer__bottom">
-						<div className="container">
-							<p className="text-center">Copyright © 2023 MCV Group Corporation. All Rights Reserved.</p>
-						</div>
-					</div>
-				</footer> */}
+                    <div className="social">
+                      <svg
+                        width="192"
+                        height="24"
+                        viewBox="0 0 192 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M13.397 20.9969V12.8009H16.162L16.573 9.59193H13.397V7.54792C13.397 6.62192 13.655 5.98793 14.984 5.98793H16.668V3.12693C15.8486 3.03912 15.025 2.99672 14.201 2.99993C11.757 2.99993 10.079 4.49193 10.079 7.23093V9.58593H7.33197V12.7949H10.085V20.9969H13.397Z"
+                          fill="#0080F6"
+                        />
+                        <path
+                          d="M78.7275 5.35306C78.1395 6.22906 77.3955 7.00906 76.5315 7.63306C76.5435 7.81306 76.5435 8.00506 76.5435 8.19706C76.5435 14.0171 72.1155 20.7251 64.0275 20.7251C61.5435 20.7251 59.2275 19.9931 57.2715 18.7451C57.6195 18.7811 57.9675 18.8051 58.3275 18.8051C60.3915 18.8051 62.2875 18.0971 63.7875 16.9211C62.8699 16.9021 61.9811 16.597 61.2454 16.0484C60.5096 15.4998 59.9635 14.7351 59.6835 13.8611C59.9475 13.9091 60.2235 13.9451 60.5115 13.9451C60.9075 13.9451 61.3035 13.8851 61.6635 13.7891C60.6682 13.5848 59.7738 13.0435 59.1311 12.2565C58.4885 11.4696 58.1368 10.4851 58.1355 9.46906V9.42106C58.7355 9.74506 59.4075 9.94906 60.1275 9.97306C59.5248 9.56882 59.0311 9.02231 58.69 8.38185C58.3488 7.74138 58.1707 7.02672 58.1715 6.30106C58.1715 5.49706 58.3875 4.74106 58.7715 4.09306C60.9435 6.75706 64.1835 8.50906 67.8435 8.68906C67.7715 8.36506 67.7235 8.02906 67.7235 7.68106C67.7267 6.51513 68.1921 5.39804 69.0176 4.57472C69.8432 3.7514 70.9615 3.28906 72.1275 3.28906C73.3995 3.28906 74.5395 3.81706 75.3435 4.68106C76.3395 4.47706 77.2875 4.11706 78.1395 3.61306C77.8035 4.63306 77.1075 5.49706 76.1955 6.03706C77.0698 5.9415 77.924 5.71075 78.7275 5.35306Z"
+                          fill="#0080F6"
+                        />
+                        <path
+                          d="M133.593 7.20301C133.479 6.78041 133.257 6.39501 132.948 6.08518C132.639 5.77534 132.254 5.55187 131.831 5.43701C130.265 5.00701 124 5.00001 124 5.00001C124 5.00001 117.736 4.99301 116.169 5.40401C115.747 5.52415 115.363 5.75078 115.054 6.06214C114.745 6.3735 114.521 6.75913 114.403 7.18201C113.99 8.74801 113.986 11.996 113.986 11.996C113.986 11.996 113.982 15.26 114.392 16.81C114.622 17.667 115.297 18.344 116.155 18.575C117.737 19.005 123.985 19.012 123.985 19.012C123.985 19.012 130.25 19.019 131.816 18.609C132.239 18.4943 132.624 18.2714 132.934 17.9622C133.244 17.653 133.468 17.2682 133.583 16.846C133.997 15.281 134 12.034 134 12.034C134 12.034 134.02 8.76901 133.593 7.20301ZM121.996 15.005L122.001 9.00501L127.208 12.01L121.996 15.005Z"
+                          fill="#0080F6"
+                        />
+                        <path
+                          d="M172.983 7.19631C174.191 7.19631 175.171 6.21671 175.171 5.00831C175.171 3.79991 174.191 2.82031 172.983 2.82031C171.775 2.82031 170.795 3.79991 170.795 5.00831C170.795 6.21671 171.775 7.19631 172.983 7.19631Z"
+                          fill="#0080F6"
+                        />
+                        <path
+                          d="M177.238 8.85469V20.9937H181.007V14.9907C181.007 13.4067 181.305 11.8727 183.269 11.8727C185.206 11.8727 185.23 13.6837 185.23 15.0907V20.9947H189.001V14.3377C189.001 11.0677 188.297 8.55469 184.475 8.55469C182.64 8.55469 181.41 9.56169 180.907 10.5147H180.856V8.85469H177.238ZM171.096 8.85469H174.871V20.9937H171.096V8.85469Z"
+                          fill="#0080F6"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-			 <BackToTop {...this.props}>
-					<Fab color="secondary" size="small" aria-label="scroll back to top" onClick={this.handleScrollTop}>
-						<i className="fas fa-angle-up"></i>
-					</Fab>
-				</BackToTop>
-			</>
-		)
-	}
+          <div className="nl-footer__bottom">
+            <div className="container--">
+              <div className="text-center">
+                Copyright © 2024 TienLuongDAITHAODUONG, All Rights Reserved
+              </div>
+            </div>
+          </div>
+        </footer>
+
+        <BackToTop {...this.props}>
+          <Fab
+            color="secondary"
+            size="small"
+            aria-label="scroll back to top"
+            onClick={this.handleScrollTop}
+          >
+            <i className="fas fa-angle-up"></i>
+          </Fab>
+        </BackToTop>
+      </>
+    );
+  }
 }
 
 export default Footer;

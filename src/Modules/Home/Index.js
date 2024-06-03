@@ -2,7 +2,12 @@
 
 /* Package System */
 import React from "react";
-// import DB from '@mobule/Home/Components/DB';
+import Darkboard from '@modules/Home/Components/Darkboard';
+import Activity from '@modules/Home/Components/Activity';
+import Online from '@modules/Home/Components/Online';
+import Tem from '@modules/Home/Components/Tem';
+
+
 /* Package Application */
 
 export default class extends React.Component {
@@ -28,7 +33,20 @@ export default class extends React.Component {
 				
 				<section className="sl-section">
 				<div className="container">
-					{/* <DB></DB> */}
+					 <Darkboard/>
+				</div>
+
+
+				<div className="container">
+					 <Activity/>
+				</div>
+
+				<div className="container">
+					 <Online/>
+				</div>
+				
+				<div className="container">
+					 <Tem/>
 				</div>
 				</section>
 			</React.Fragment>
