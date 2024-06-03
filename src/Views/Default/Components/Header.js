@@ -577,7 +577,7 @@ class Header extends React.Component {
                       </div>
                     </div>
 
-                    <div className="language">
+                    {/* <div className="language">
                       <div className="button-">
                         <div className="button-base">
                           <div className="text-v">VN</div>
@@ -588,7 +588,7 @@ class Header extends React.Component {
                       <div className="language-call">
                         <div className="call-text">Liên hệ</div>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>

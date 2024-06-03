@@ -19,7 +19,7 @@ class Footer extends React.Component {
     return (
       <>
         <footer id="nl-footer">
-          <div className="nl-footer__top">
+          {/* <div className="nl-footer__top">
             <div className="container-">
               <div className="inner">
                 <div className="group">
@@ -55,32 +55,31 @@ class Footer extends React.Component {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div className="nl-footer__middle">
             <div className="container">
               <div className="row">
-                <div className="col-lg-6">
+                <div className="col-lg-9">
                   <div className="ctn">
                     <div className="ctn-content">
                       <h3>TIÊN LƯỢNG</h3>
                       <h4>Đái tháo đường</h4>
                     </div>
-                    <div className="ctn-app">
-                      <div className="ctn-text">
-                        Ứng dụng Tiên Đoán Tiểu Đường giúp phát hiện nguy cơ mắc
-                        bệnh sớm, cung cấp lời khuyên phòng ngừa và cải thiện
-                        lối sống cho cộng đồng.
-                      </div>
+
+                    <div className="ctn-text">
+                      Ứng dụng Tiên Đoán Tiểu Đường giúp phát hiện nguy cơ mắc
+                      bệnh sớm, cung cấp lời khuyên phòng ngừa và cải thiện lối
+                      sống cho cộng đồng.
                     </div>
                   </div>
                 </div>
 
-                <div className="col-lg-7">
+                <div className="col-lg-3">
                   <div className="row">
-                    <div className="col-md-4">
+                    <div className="col-md-12">
                       <dt>BỆNH VIỆN ĐA KHOA XANH PÔN</dt>
-                      <p>12 Chu Văn An, Ba Đình, Hà Nội</p>
+                      <dd>12 Chu Văn An, Ba Đình, Hà Nội</dd>
                       <div className="text-tel">
                         Tel: 02438233075 - 02438233073
                       </div>

@@ -1,6 +1,6 @@
 module.exports = {
   apps: [{
-    name: "sourcenews",
+    name: "demo.diabetes-ai.live",
     script: "./index.js",
     env: {
       "NODE_ENV": "development"

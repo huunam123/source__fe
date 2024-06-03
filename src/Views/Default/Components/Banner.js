@@ -70,13 +70,13 @@ class Banner extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <section className="banner">
+         <section className="banner"> 
           <div className="container">
             <div className="banner-content">
               <div className="banner-">
                 <div className="banner-text">
                   <div className="text">Ứng dụng y tế cộng đồng</div>
-                  <div className="text-">TIÊN LƯỢNG CHUẨN ĐOÁN</div>
+                  <div className="textt-">TIÊN LƯỢNG CHUẨN ĐOÁN</div>
                   <div className="text-content">ĐÁI THÁO ĐƯỜNG</div>
                 </div>
                 <div className="content">
@@ -385,7 +385,7 @@ class Banner extends React.Component {
               </div>
             </div>
           </div>
-        </section>
+         </section> 
       </React.Fragment>
     );
   }

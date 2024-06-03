@@ -72,7 +72,11 @@ class DB extends React.Component {
       <React.Fragment>
         <div className="container-tem">
           <div className="tem-text">Đội ngũ chuyên gia</div>
+
+      
+
           <div className="group-tem">
+          
             <div className="tem-doc">
               <div className="doc1">
                 <div className="doc-img">
@@ -113,6 +117,7 @@ class DB extends React.Component {
                 </div>
               </div>
             </div>
+            
 
             <div className="doc">
               <div className="doc4">
@@ -155,7 +160,8 @@ class DB extends React.Component {
               </div>
             </div>
           </div>
-        </div>
+          </div>
+      
       </React.Fragment>
     );
   }
