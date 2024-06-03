@@ -1,6 +1,6 @@
 module.exports = {
   apps: [{
-    name: "demo.diabetes-ai.live",
+    name: "diabetes-ai.live",
     script: "./index.js",
     env: {
       "NODE_ENV": "development"

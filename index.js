@@ -58,8 +58,8 @@ try{
 		if(process.env.NODE_ENV=='production'||process.env.NODE_ENV=='staging'){
 			let _prefix = process.env.NODE_ENV=='staging'?'staging.':'';
 			server = require('http2').createSecureServer({
-				key:fs.readFileSync('/etc/letsencrypt/live/demo.diabetes-ai.live/privkey.pem'),
-				cert:fs.readFileSync('/etc/letsencrypt/live/demo.diabetes-ai.live/fullchain.pem'),
+				key:fs.readFileSync('/etc/letsencrypt/live/diabetes-ai.live/privkey.pem'),
+				cert:fs.readFileSync('/etc/letsencrypt/live/diabetes-ai.live/fullchain.pem'),
 				allowHTTP1:true
 			},app);
 		}else{
