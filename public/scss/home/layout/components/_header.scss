@@ -105,7 +105,8 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        padding: 30px 1px;
+        // padding: 30px 1px;
+        padding-top: 26px;
         // left: -8px;
 
         .doctor-text {
@@ -143,248 +144,170 @@
 
   .doctor-text {
     // width: 1098px;
-    height: 34.55px;
+    // height: 34.55px;
     gap: 40px;
     display: flex;
     align-items: center;
     // gap: 5px;
 
     .group-doctor {
-      width: 104.69px;
-      height: 36.55px;
-      // gap: 0px;
-      // opacity: 0px;
+    /* Frame 33996 */
 
-      .vector-D {
-        width: 18.92px;
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+width: 100%;
+// width: 185px;
+// height: 43px;
 
-        display: flex;
-        margin: -15px;
-        margin-left: 0px;
-        align-content: space-around;
-        flex-wrap: wrap;
+
+
+      svg {
       }
-
-      .vector-T {
-        margin: -23px;
-        margin-left: 55px;
-      }
-
-      .vector-C {
-        width: 15.72px;
-        margin: -22px;
-        margin-left: 38px;
-      }
-
-      .vector-O {
-        width: 18.92px;
-
-        margin: -23px;
-        margin-left: 69px;
-      }
-
-      .vector-O {
-        width: 18.92px;
-
-        margin: -23px;
-        margin-left: 69px;
-      }
-
-      .vector-R {
-        width: 18.92px;
-
-        margin: -23px;
-        margin-left: 90px;
-      }
-
-      .vector-N {
-        // display: inline-block;
-        // margin-right: 8px;
-        display: flex;
-        align-items: center;
+      .contentt {
         width: 100%;
-        height: auto;
-        margin-top: 23px;
-      }
-
-      .vector-E {
-        width: 100%;
-        height: auto;
-
-        // position: fixed;
         display: flex;
-        margin-top: -16px;
-        margin-left: 16px;
-        align-items: center;
-
-        .small-square {
-          position: relative;
-          right: 5px;
-          // margin: auto;
-        }
-      }
-
-      .vector-Ti {
-        display: flex;
-        margin-left: -39px;
+        flex-direction: column;
         align-items: flex-start;
-        justify-content: center;
-        margin-top: -16px;
-      }
+        padding: 0px;
+        gap: 1px;
 
-      .vector-W {
-        display: flex;
-        margin-left: -3px;
-        align-items: flex-start;
-        justify-content: center;
-        margin-top: -16px;
-      }
+        p {
+          // width: 79px;
+          // height: 19px;
 
-      .vector-O- {
-        display: flex;
-        margin-left: 36px;
-        align-items: flex-start;
-        justify-content: center;
-        margin-top: -16px;
-
-        .small {
-          position: absolute;
-          // right: 1px;
-          margin: auto;
-          margin-top: 4px;
-        }
-      }
-
-      .vector-R- {
-        display: flex;
-        margin-left: 67px;
-        align-items: flex-start;
-        justify-content: center;
-        margin-top: -16px;
-      }
-
-      .vector-K {
-        display: flex;
-        margin-left: 93px;
-        align-items: flex-start;
-        justify-content: center;
-        margin-top: -16px;
-      }
-    }
-
-    .group-heart {
-      width: 18.36px;
-      // height: 17.72px;
-      top: 0px;
-      left: 16.43px;
-      // gap: 0px;
-      // opacity: 0px;
-      margin-right: 10px;
-    }
-  }
-
-  .language {
-    // width: 182px;
-    // height: 36px;
-    gap: 17px;
-    // padding: 0 20px;
-    display: flex;
-    // justify-content: space-between;
-    align-items: center;
-
-    .button- {
-      width: 70px;
-      // height: 20px;
-      // gap: 0px;
-      // opacity: 0px;
-      display: flex;
-      align-items: center;
-      // margin-right: 20px;
-
-      .button-base {
-        width: 70px;
-        // height: 20px;
-        gap: 4px;
-        opacity: 0px;
-        display: flex;
-        align-items: center;
-
-        .text-v {
-          width: 28px;
-          // height: 20px;
-          // gap: 0px;
-          // opacity: 0px;
-          font-family: "Roboto", sans-serif;
-          font-size: 20px;
-          font-weight: 500;
-          line-height: 20px;
-          text-align: left;
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          letter-spacing: 0.02em;
           color: #0080f6;
         }
+        h1 {
+          /* Đái tháo đường */
 
-        .text- {
-          width: 8px;
-          // height: 20px;
-          // gap: 0px;
-          // opacity: 0px;
-          font-family: "Roboto", sans-serif;
+          // width: 144px;
+          // height: 23px;
+
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 700;
           font-size: 20px;
-          font-weight: 100;
-          line-height: 20px;
-          text-align: left;
+          line-height: 23px;
+          text-align: center;
+          letter-spacing: 0.02em;
           color: #0080f6;
         }
-
-        .text-e {
-          width: 26px;
-          // height: 20px;
-          // gap: 0px;
-          // opacity: 0px;
-          font-family: "Roboto", sans-serif;
-          font-size: 20px;
-          font-weight: 500;
-          line-height: 20px;
-          text-align: left;
-          color: #98a2b3;
-        }
-      }
-    }
-
-    .language-call {
-      width: 88px;
-      // height: 36px;
-      padding: 8px 16px 8px 16px;
-      gap: 10px;
-      border-radius: 8px 8px 8px 8px;
-      // opacity: 0px;
-      background: #0080f6;
-      display: flex;
-      align-items: center;
-
-      .call-text {
-        width: 56px;
-        // height: 20px;
-        gap: 0px;
-        opacity: 0px;
-        font-family: "Inter", sans-serif;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 20px;
-        text-align: center;
-        color: #ffffff;
       }
     }
   }
 }
 
-.heart {
-  width: 18.36px;
-  height: 17.72px;
-  margin-top: 0px;
-  margin-left: 16.43px;
-  // gap: 0px;
-  // opacity: 0px;
-}
+//   .language {
+//     // width: 182px;
+//     // height: 36px;
+//     gap: 17px;
+//     // padding: 0 20px;
+//     display: flex;
+//     // justify-content: space-between;
+//     align-items: center;
+
+//     .button- {
+//       width: 70px;
+//       // height: 20px;
+//       // gap: 0px;
+//       // opacity: 0px;
+//       display: flex;
+//       align-items: center;
+//       // margin-right: 20px;
+
+//       .button-base {
+//         width: 70px;
+//         // height: 20px;
+//         gap: 4px;
+//         opacity: 0px;
+//         display: flex;
+//         align-items: center;
+
+//         .text-v {
+//           width: 28px;
+//           // height: 20px;
+//           // gap: 0px;
+//           // opacity: 0px;
+//           font-family: "Roboto", sans-serif;
+//           font-size: 20px;
+//           font-weight: 500;
+//           line-height: 20px;
+//           text-align: left;
+//           color: #0080f6;
+//         }
+
+//         .text- {
+//           width: 8px;
+//           // height: 20px;
+//           // gap: 0px;
+//           // opacity: 0px;
+//           font-family: "Roboto", sans-serif;
+//           font-size: 20px;
+//           font-weight: 100;
+//           line-height: 20px;
+//           text-align: left;
+//           color: #0080f6;
+//         }
+
+//         .text-e {
+//           width: 26px;
+//           // height: 20px;
+//           // gap: 0px;
+//           // opacity: 0px;
+//           font-family: "Roboto", sans-serif;
+//           font-size: 20px;
+//           font-weight: 500;
+//           line-height: 20px;
+//           text-align: left;
+//           color: #98a2b3;
+//         }
+//       }
+//     }
+
+//     .language-call {
+//       width: 88px;
+//       // height: 36px;
+//       padding: 8px 16px 8px 16px;
+//       gap: 10px;
+//       border-radius: 8px 8px 8px 8px;
+//       // opacity: 0px;
+//       background: #0080f6;
+//       display: flex;
+//       align-items: center;
+
+//       .call-text {
+//         width: 56px;
+//         // height: 20px;
+//         gap: 0px;
+//         opacity: 0px;
+//         font-family: "Inter", sans-serif;
+//         font-size: 16px;
+//         font-weight: 500;
+//         line-height: 20px;
+//         text-align: center;
+//         color: #ffffff;
+//       }
+//     }
+//   }
+
+// .heart {
+//   width: 18.36px;
+//   height: 17.72px;
+//   margin-top: 0px;
+//   margin-left: 16.43px;
+//   // gap: 0px;
+//   // opacity: 0px;
+// }
 
 //media max-width:991.98px
 @include media-breakpoint-down(lg) {
