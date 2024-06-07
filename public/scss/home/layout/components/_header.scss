@@ -22,10 +22,8 @@
       width: 100%;
       flex: 0 0 100%;
       overflow: hidden;
-      // width: 1921px;
-      // height: 616px;
       gap: 0px;
-      opacity: 0px;
+      opacity: 1px;
 
       .d-flex- {
         height: 100%;
@@ -65,7 +63,7 @@
       width: 1921px;
       height: 616px;
       gap: 0px;
-      opacity: 0px;
+      opacity: 1px;
     }
   }
 
@@ -138,9 +136,6 @@
   position: relative;
   top: 0;
   z-index: 1000;
-  // display: flex;
-  // justify-content: space-between;
-  // align-items: center;
 
   .doctor-text {
     // width: 1098px;
@@ -151,22 +146,18 @@
     // gap: 5px;
 
     .group-doctor {
-    /* Frame 33996 */
+      /* Frame 33996 */
 
-/* Auto layout */
-display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 0px;
-gap: 12px;
-width: 100%;
-// width: 185px;
-// height: 43px;
+      /* Auto layout */
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 0px;
+      gap: 12px;
+      width: 100%;
+      // width: 185px;
+      // height: 43px;
 
-
-
-      svg {
-      }
       .contentt {
         width: 100%;
         display: flex;
