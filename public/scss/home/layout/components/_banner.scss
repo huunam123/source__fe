@@ -184,9 +184,9 @@
 
         .text-content {
           font-size: 40px;
-          margin-left: 0px;
+          margin-left: -15pxpx;
           margin-top: -24px;
-          width: 342px;
+          // width: 342px;
         }
       }
 
@@ -241,6 +241,7 @@
       .content {
         width: 100%;
         margin-top: 3px;
+        text-align: justify;
       }
     }
   }
