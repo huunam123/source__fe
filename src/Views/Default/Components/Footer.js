@@ -2,7 +2,6 @@
 
 /* Package System */
 import React from "react";
-import Link from "next/link";
 import BackToTop from "@views/Default/Components/BackToTop";
 import Fab from "@mui/material/Fab";
 
@@ -10,53 +9,10 @@ class Footer extends React.Component {
   constructor(props) {
     super(props);
   }
-
-  handleScrollTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
   render() {
     return (
       <>
         <footer id="nl-footer">
-          {/* <div className="nl-footer__top">
-            <div className="container-">
-              <div className="inner">
-                <div className="group">
-                  <div className="group-mail">
-                    <svg
-                      width="100"
-                      height="101"
-                      viewBox="0 0 100 101"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <circle cx="50" cy="50.5" r="50" fill="white" />
-                      <path
-                        d="M47.3973 26.7364C47.1453 26.5985 46.8626 26.5262 46.5753 26.5262C46.2881 26.5262 46.0054 26.5985 45.7534 26.7364L28.4247 36.1885C27.7329 36.5652 27.1678 37.1028 26.7569 37.7398L46.5753 48.548L66.3938 37.7398C65.9767 37.092 65.4031 36.5597 64.726 36.1919L47.3973 26.733V26.7364ZM26.0274 57.3494V41.2432L45.7534 52.0035C46.0054 52.1414 46.2881 52.2137 46.5753 52.2137C46.8626 52.2137 47.1453 52.1414 47.3973 52.0035L67.1233 41.2432V57.3494C67.1233 59.166 66.4017 60.9081 65.1172 62.1926C63.8327 63.4771 62.0905 64.1987 60.274 64.1987H32.8767C31.0602 64.1987 29.318 63.4771 28.0335 62.1926C26.749 60.9081 26.0274 59.166 26.0274 57.3494ZM33.7945 67.6234C34.3957 68.6646 35.2603 69.5292 36.3015 70.1304C37.3427 70.7315 38.5238 71.048 39.726 71.048H60.274C63.9071 71.048 67.3914 69.6048 69.9604 67.0358C72.5294 64.4668 73.9726 60.9825 73.9726 57.3494V43.6508C73.9726 42.4485 73.6561 41.2674 73.0549 40.2262C72.4538 39.185 71.5891 38.3204 70.5479 37.7193V57.3494C70.5479 60.0742 69.4655 62.6875 67.5388 64.6142C65.612 66.541 62.9988 67.6234 60.274 67.6234H33.7945Z"
-                        fill="#0A377F"
-                      />
-                    </svg>
-                  </div>
-                  <div className="group-text">
-                    Đăng ký để nhận thông báo mới nhất từ chúng tôi!
-                  </div>
-                </div>
-
-                <div className="group-import">
-                  <div className="email-">
-                    <div className="email-text">
-                      Nhập địa chỉ E-mail của bạn
-                    </div>
-                  </div>
-                  <div className="group-re">
-                    <div className="re">Đăng ký</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> */}
-
           <div className="nl-footer__middle">
             <div className="container">
               <div className="row">
@@ -126,7 +82,7 @@ class Footer extends React.Component {
           <div className="nl-footer__bottom">
             <div className="container--">
               <div className="text-center">
-                Copyright © 2024 TienLuongDAITHAODUONG, All Rights Reserved
+                Copyright © 2024 TienluongDaithaoduong, All Rights Reserved
               </div>
             </div>
           </div>

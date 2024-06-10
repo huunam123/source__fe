@@ -14,9 +14,9 @@ export default class extends Document{
 		return (
 			<Html>
 				<Head>
-					<link href='https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap' rel='stylesheet' type='text/css' />_
-					<link href='https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap' rel='stylesheet' type='text/css' />_
-					<link href='https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap' rel='stylesheet' type='text/css' />_
+					<link href='https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap' rel='stylesheet' type='text/css' />
+					<link href='https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap' rel='stylesheet' type='text/css' />
+					<link href='https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap' rel='stylesheet' type='text/css' />
 					{(typeof(process.env.GG_GTAG_ID)!=='undefined'&&process.env.GG_GTAG_ID!='')&&
 					<script
 						dangerouslySetInnerHTML={{
@@ -37,7 +37,7 @@ export default class extends Document{
 							__html:`<iframe src="https://www.googletagmanager.com/ns.html?id=${process.env.GG_GTAG_ID}" height="0" width="0" style="display:none;visibility:hidden"></iframe>`
 						}}
 					/>
-					}
+					} 
 					<Main />
 					<NextScript />
 				</body>

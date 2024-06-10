@@ -2,66 +2,18 @@
 
 /* Package System */
 import React from "react";
-import Link from "next/link";
-
-/* Application */
-import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
-import Button from "@mui/material/Button";
-import { fetchApi, changeToSlug } from "@helpers/Common";
-
 /* Package style */
-//import 'swiper/swiper-bundle.min.css';
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
-import { isIOS } from "react-device-detect";
-import Countdown from "react-countdown";
-class DB extends React.Component {
+
+class Dashboard extends React.Component {
   constructor(props) {
     super(props);
     this._isMounted = false;
-    this.state = {
-      banners: [],
-      hideDescription: false,
-    };
+    this.state = {};
   }
-
-  getHomeBanner = () => {
-    let _result = [];
-    _result.push({
-      type: "cover",
-      id: "",
-      // 'title': "Bạn muốn trở thành nhân vật xuất hiện trên MCV Network?",
-      thumbnail: "/images/banner1.png",
-      link: "",
-    });
-    return _result;
-  };
 
   componentDidMount() {
     this._isMounted = true;
-    Promise.all([this.getHomeBanner()])
-      .then((resp) => {
-        let _banners = resp[0].concat(
-          typeof resp[1] !== "undefined" ? resp[1] : []
-        );
-        this.setState({ banners: _banners });
-      })
-      .catch((e) => console.log(e));
   }
-
-  hanldeDownload = () => {
-    let _linkDL = isIOS == true ? "" : "";
-    window.location = _linkDL;
-  };
-
-  handleLink = (e) => {
-    console.log("handleLink", e);
-    let _link = e.currentTarget.dataset.link;
-    if (_link && _link != "null") window.location = _link;
-  };
 
   componentWillUnmount() {
     this._isMounted = false;
@@ -70,10 +22,11 @@ class DB extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <div className="container-item">
-          <div className="item"></div>
-          <div className="container-item-l">
-            <div className="item-l">
+        <div className="row component-dashboard">
+          <div className="col-lg-12 bg"></div>
+          <div className="col-lg-2 col-sm-12"></div>
+          <div className="col-lg-2 col-md-6 col-sm-6 item-box">
+            <div className="item">
               <svg
                 width="32"
                 height="32"
@@ -93,16 +46,14 @@ class DB extends React.Component {
                   </clipPath>
                 </defs>
               </svg>
-
               <div className="dowl">
                 <div className="dow-view">1,4 M+</div>
                 <div className="dow-turn">Lượt tải về</div>
               </div>
             </div>
           </div>
-
-          <div className="container-item-li">
-            <div className="item-l">
+          <div className="col-lg-2 col-md-6 col-sm-6 item-box">
+            <div className="item">
               <svg
                 width="32"
                 height="32"
@@ -124,9 +75,8 @@ class DB extends React.Component {
               </div>
             </div>
           </div>
-
-          <div className="container-item-l- ">
-            <div className="item-l">
+          <div className="col-lg-2 col-md-6 col-sm-6 item-box">
+            <div className="item">
               <svg
                 width="32"
                 height="32"
@@ -150,11 +100,8 @@ class DB extends React.Component {
               </div>
             </div>
           </div>
-
-
-
-          <div className="container-item--l">
-            <div className="item-l">
+          <div className="col-lg-2 col-md-6 col-sm-6 item-box">
+            <div className="item">
               <svg
                 width="32"
                 height="32"
@@ -181,34 +128,11 @@ class DB extends React.Component {
               </div>
             </div>
           </div>
+          <div className="col-lg-2 col-md-6 col-sm-12"></div>
         </div>
-
-        {/* 
-			  <div className="activity">
-			  <div className="ac">
-				<div className="ac--">
-					<div className="ac-text">
-					Tại sao bạn nên chọn chúng tôi?
-					</div>
-
-				</div>
-				<div className="ac-bu">
-					<div className="bu1">
-
-					</div>
-					<div className="bu2">
-
-					</div>
-					<div className="bu3">
-
-					</div>
-
-				</div>
-			  </div>
-			  </div> */}
       </React.Fragment>
     );
   }
 }
 
-export default DB;
+export default Dashboard;

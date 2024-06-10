@@ -36,7 +36,6 @@ export default class extends App{
 		super(props);
 		this.reduxStore = getOrInitializeStore(props.initialReduxState);
 		this.reduxStore.asyncReducers = {};
-		//this.reduxStore.subscribe(()=>console.log('Subscribe:',this.reduxStore.getState()));
 	}
 
 	static async getInitialProps(appContext){

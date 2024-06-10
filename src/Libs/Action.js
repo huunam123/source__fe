@@ -113,16 +113,6 @@ module.exports = class Action{
 		}
 	}
 	
-	setQuestions=(type,value)=>{
-		return dispatch=>{
-			dispatch({type,payload:{value}});
-		}
-	}
-	setAnswer=(type,value)=>{
-		return dispatch=>{
-			dispatch({type,payload:{value}});
-		}
-	}
 
 	setValueStatus=(type,value)=>{
 		return dispatch=>{

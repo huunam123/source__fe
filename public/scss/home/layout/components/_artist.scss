@@ -17,7 +17,7 @@
 		display: flex;
 		align-self: center;
 		position: relative;
-		overflow: hidden;
+		// overflow: hidden;
 		@include border-radius(50%);
 
 		&::before{
@@ -35,7 +35,7 @@
 		}
 
 		img{
-			overflow: hidden;
+			// overflow: hidden;
 			width: $artistCard-img-maxWidthHeight;
 			@include border-radius(50%);
 			object-fit: cover;
