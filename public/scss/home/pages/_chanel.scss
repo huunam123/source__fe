@@ -74,7 +74,7 @@
 			margin: 0 auto;
 			margin-top: 25px;
 			height: $chanelDetail-description-height;
-			overflow: hidden;
+			// overflow: hidden;
 			line-height: $chanelDetail-description-lineHeight;
 			@include transition(all .2s linear);
 

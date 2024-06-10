@@ -5,7 +5,7 @@
 	.video-detail__movieShow{
 
 		.container{
-			overflow: hidden;
+			// overflow: hidden;
 			position: relative;
 
 			&::before{
@@ -45,7 +45,7 @@
 
 			.nl-player__video{
 				position: relative;
-				overflow: hidden;
+				// overflow: hidden;
 				// padding-top: 56.25%;
 
 				video, iframe,.dm-player.dm-show-player{
@@ -882,7 +882,7 @@
 
 				.live-chat__main{
 					flex: 1 1 auto;
-					overflow: hidden;
+					// overflow: hidden;
 
 					.scrollbar-container{
 						padding: 20px 20px 5px;
@@ -951,7 +951,7 @@
 		flex: 0 0 auto;
 		width: 24px;
 		height: 24px;
-		overflow: hidden;
+		// overflow: hidden;
 		margin-right: 15px;
 		@include border-radius(50%);
 		background-color: #aaaaaa;
@@ -1048,7 +1048,7 @@
 	background-color: $bg-sevent;
 	padding: 20px 0;
 	height: 100%;
-	overflow: hidden;
+	// overflow: hidden;
 	align-items: stretch;
 	display: flex;
 	flex-direction: column;

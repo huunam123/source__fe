@@ -2,11 +2,11 @@
   background: linear-gradient(90deg, #fcf1fe 0%, #e8f3fe 100%);
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  // align-items: flex-start;
   padding: 56px 40px;
-  gap: 10px;
+  // gap: 10px;
   width: 100%;
-  margin-top: 174px;
+  margin-top: 120px;
   border-radius: 131px;
 
   .activity-title {
@@ -21,16 +21,18 @@
 
   .activity-content {
     padding-top: 80px;
-
+    margin: 0 auto;
     .item-box {
-      padding: 33px;
+      padding: 22px;
 
       .item {
         width: 100%;
+        text-align: center;
+        margin-top: -20px;
 
         img {
           height: 150px;
-          padding-left: 84px;
+          
         }
 
         .bu-text {
@@ -63,8 +65,11 @@
 
 @media (min-width: 0px) and (max-width: 630px) {
   .activity {
+    border-radius: 40px;
+    padding: 16px;
+    padding-top: 40px;
     .activity-content {
-      padding-top: 32px;
+      padding-top: 40px;
     }
   }
 }
@@ -72,15 +77,21 @@
 @media (min-width: 0px) and (max-width: 382px) {
   .activity {
     margin-top: 100px;
-
+    border-radius: 40px;
+    padding: 16px;
+    padding-top: 40px;
     .activity-content {
+      padding-top: 40px;
+      gap: 40px;
+
       .item-box {
+
         .item {
           width: 100%;
 
-          img {
-            padding-left: 23px;
-          }
+          // img {
+          //   padding-left: 23px;
+          // }
         }
       }
     }
@@ -89,14 +100,21 @@
 
 @media (min-width: 0px) and (max-width: 414px) {
   .activity {
+    border-radius: 40px;
+    padding: 16px;
+    padding-top: 40px;
     .activity-content {
+      padding-top: 40px;
+      gap: 40px;
+
       .item-box {
+
         .item {
           width: 100%;
 
-          img {
-            padding-left: 34px;
-          }
+          // img {
+          //   padding-left: 34px;
+          // }
         }
       }
     }
@@ -105,14 +123,21 @@
 
 @media (min-width: 0px) and (max-width: 533px) {
   .activity {
+    border-radius: 40px;
+    padding: 16px;
+    padding-top: 40px;
+
     .activity-content {
+      padding-top: 40px;
+      gap: 40px;
       .item-box {
+
         .item {
           width: 100%;
 
-          img {
-            padding-left: 53px;
-          }
+          // img {
+          //   padding-left: 53px;
+          // }
         }
       }
     }
@@ -121,6 +146,9 @@
 
 @media (min-width: 0px) and (max-width: 382px) {
   .activity {
+    border-radius: 40px;
+    padding: 16px;
+    padding-top: 40px;
     .activity-title {
       font-size: 24px;
     }

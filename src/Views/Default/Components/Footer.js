@@ -82,7 +82,7 @@ class Footer extends React.Component {
           <div className="nl-footer__bottom">
             <div className="container--">
               <div className="text-center">
-                Copyright © 2024 diabetes-ai.live, All Rights Reserved
+                Copyright © 2024 TienluongDaithaoduong, All Rights Reserved
               </div>
             </div>
           </div>

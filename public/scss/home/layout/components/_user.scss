@@ -21,7 +21,7 @@
 		.img{
 			width: 40px;
 			height: 40px;
-			overflow: hidden;
+			// overflow: hidden;
 			cursor: pointer;
 			@include border-radius(50%);
 
@@ -48,7 +48,7 @@
 				.avatar{
 					width: $dropdownProfile-avatar-size;
 					height: $dropdownProfile-avatar-size;
-					overflow: hidden;
+					// overflow: hidden;
 					margin-right: 15px;
 				}
 
@@ -155,7 +155,7 @@
 			top: 0;
 			width: 100vw;
 			height: 100vh;
-			overflow-y: auto;
+			// overflow-y: auto;
 			z-index: -1;
 			padding: 0;
 			margin-top: 0 !important;
@@ -312,7 +312,7 @@
 									.img{
 										width: 96px;
 										height: 96px;
-										overflow: hidden;
+										// overflow: hidden;
 										position: relative;
 										@include border-radius(50%);
 

@@ -23,9 +23,9 @@ $space-tab-active : 3px;
 			padding: 0px;
 			border-radius: 16px;
 			width: 592px;
-			overflow: hidden;
+			// overflow: hidden;
 			max-height: 100%;
-			overflow-y: scroll;
+			// overflow-y: scroll;
 			.modal-inner{
 				width: 100%;
 				padding: 0px;
@@ -36,9 +36,9 @@ $space-tab-active : 3px;
 		&.reviewCasting{
 			padding: 0px;
 			border-radius: 16px;
-			overflow: hidden;
+			// overflow: hidden;
 			max-height: 100%;
-			overflow-y: scroll;
+			// overflow-y: scroll;
 			.modal-inner{
 				width: 100%;
 				padding: 0px;
@@ -397,7 +397,7 @@ $space-tab-active : 3px;
 			@include media-breakpoint-down(md){
 				padding-bottom: 30px;
 				padding: 60px 20px;
-				overflow-y: auto;
+				// overflow-y: auto;
 				width: 100%;
 			}
 
@@ -1108,7 +1108,7 @@ $space-tab-active : 3px;
 			display: -webkit-box;
 		    -webkit-box-orient: vertical;
 		    -webkit-line-clamp: 1;
-		    overflow: hidden;
+		    // overflow: hidden;
 		}
 
 		.MuiButton-text{
