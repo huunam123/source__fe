@@ -96,31 +96,25 @@
   }
 }
 
-@media (min-width: 375px) {
+@media (min-width:0px) {
   #nl-headerr__mastehead {
     .d-flex- {
       .menu {
         display: flex;
         flex-direction: row;
         align-items: center;
-        // padding: 30px 1px;
         padding-top: 26px;
-        // left: -8px;
-
         .doctor-text {
           display: flex;
           flex-direction: row;
           align-items: center;
-          // padding: -31px 2px;
           width: 100%;
         }
         .language {
           display: flex;
           flex-direction: unset;
           align-items: center;
-          // padding: 0px 51px;
           gap: 24px;
-          //  padding-left: 42px;
         }
       }
     }

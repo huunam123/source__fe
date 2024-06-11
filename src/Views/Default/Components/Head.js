@@ -35,7 +35,7 @@ export default class extends React.Component{
 					<meta property="og:image:alt" content={(_title!=''&&_title!==undefined)?_title+' | MCV':'MCV'} />
 					<meta name="keywords" content="MCV,MCV Group,MCV Network" />
 					<meta name="description" content={_description} />
-					<title>{(_title!=''&&_title!==undefined)?_title+' | MCV':'MCV Network'}</title>
+					<title>{(_title!=''&&_title!==undefined)?_title+' | MCV':'TIÊN LƯỢNG CHUẨN ĐOÁN'}</title>
 				</Head>
 			</>
 		)
